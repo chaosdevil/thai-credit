@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+        <img src="{{ url_for('references', path='/S__14884902.jpg') }}" alt="" srcset="" style="width: 20%; height: 50%;">
+        </div>
+        <div class="banner">
+            <h3>PRE-SCREEN PRODUCT PROGRAM</h3>
+            <p>User ID: T640306</p>
+        </div>
+        <div class="content">
+            <div class="customer-detail">
+                <div class="title_box" id="bill_to">
+                    <div id="title">CUSTOMER DETAILS</div>
+                    <form action="/query_by_cif" method="post">
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">CIF NO. : </label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" name="cif_no" id="inputEmail3">
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="btn btn-primary" type="submit">Find</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">NAME : </label>
+                        <div class="col-sm-10">
+                            <p>{{ name }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    <script src="public/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

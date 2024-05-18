@@ -1,0 +1,5 @@
+fastapi
+streamlit
+jinja2
+fastapi
+pysqlite3

@@ -1,0 +1,35 @@
+h1 {
+    color: blue;
+}
+
+.banner {
+    margin: 0px;
+    padding: 20px 0px;
+    background-color: rgb(31, 92, 234);
+    text-align: center;
+    color: white;
+}
+
+.content {
+    margin: 70px;
+}
+
+.title_box {
+    border: #3c5a86 1px dotted;
+  }
+  
+  .title_box #title {
+    position: relative;
+    top: -0.5em;
+    margin-left: 1em;
+    display: inline;
+    background-color: white;
+  }
+  
+  /* .title_box #content {} */
+
+  .mb-3 {
+    margin-bottom: 1rem!important;
+    margin-left: 40px;
+    margin-right: 300px;
+  }
